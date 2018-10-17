@@ -62,6 +62,8 @@ main-nav
 	float: right;
 	margin: 2;
 	padding-right: 20px;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .main-nav li
@@ -87,11 +89,40 @@ main-nav
 	transition: all 0.2s ease-in;	padding: 10px 0;
 }
 
+
+@media screen and (max-width:1000px){
+
+		.main-nav{
+					height: auto;
+
+		}
+
+
+		.main-nav .row{
+					text-align: left;
+					width: 100%;
+		}
+
+		.main-nav .row ul{
+					justify-content: space-around;
+		}
+
+		.main-nav .row ul li{
+					width: 20%;
+					padding: 10px 0px;
+					text-align: center;
+					font-size: 16px;
+		}
+
+}
+
 .logo
 {
 	max-width: 100%;
 	height: auto;
-	position: absolute;
+
+	display: flex;
+	flex-wrap: wrap;
 }
 
 
@@ -103,6 +134,8 @@ main-nav
 	top:50%;
 	left:50%;
 	transform: translate(-50%,-50%);
+	display: flex;
+	flex-wrap: wrap;
 }
 
 
